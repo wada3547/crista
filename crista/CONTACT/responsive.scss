@@ -1,0 +1,226 @@
+$pc:1280px; //pc
+$tab:768px; //タブレット
+$sp:375px;  
+
+
+@mixin pc {
+    @media (max-width: ($pc)) {
+      @content;
+    }
+  }
+
+@mixin tab {
+    @media (max-width: ($tab)) {
+      @content;
+    }
+  }
+  @mixin sp {
+    @media (max-width: ($sp)) {
+      @content;
+    }
+}
+
+mixin noto {
+    font-family: 'Noto Sans JP', sans-serif;   
+}
+@mixin gosic {
+    font-family:'Sawarabi Gothic', sans-serif; 
+}
+@mixin m {
+    font-family: 'Montserrat medium';
+}
+
+.header{
+    &-img img{
+        @include tab{
+        width: 578px;
+        height: 529px;
+    }
+        @include sp{
+        width: 287px;
+        height: 270px;
+    }
+
+}
+    &-bg{
+     @include pc{
+     margin: -24px 0px 0px 483px;
+    }
+    @include tab{
+     margin: -24px 0px 0px 364px;
+    }
+    @include sp{
+        margin: -25px 0px 0px 179px;
+    }
+}
+    &-bg img{
+    @include tab{
+        width: 406px;
+        height: 615px;
+    }
+    @include sp{
+        width: 198px;
+        height: 365px;
+    }
+}
+    &-logo{
+        @include tab{
+            padding-left:30px;
+        }
+        @include sp{
+            padding-left:15px;
+        }
+    }
+
+    &-logo img{
+        @include sp{
+            width:189px;
+            height: 20px;
+        }
+    }
+
+   &-ttl{
+       @include pc{
+           position: relative;
+           left: 805px;
+           margin-right: 805px;
+       }
+       @include tab{
+           position: relative;
+           left:430px;
+           bottom: 490px;
+           margin-right: 430px;
+       }
+       @include sp{
+            position: relative;
+            left: 70px;
+            bottom: 264px;
+            margin-right: 70px;
+       }
+   }
+   &-ttl p{
+        @include tab{
+            font-size: 16px;
+        }
+        @include sp{
+            position: relative;
+            top: 0;
+            left: 192px;
+            margin-right: 192px;
+        }
+    }
+   &-ttl h1{
+        @include tab{
+            font-size: 52px;
+        }
+    }
+    #show{
+        @include tab{
+        margin: 32px 58px;
+       }
+       @include sp{
+         margin: 24px 15px;
+         font-size: 10px;
+       }
+      }
+       #hide{
+         @include sp{
+          margin: 24px 15px 0px 0px;
+          font-size: 10px;   
+         }
+       }
+    nav{
+        @include sp{
+          width: 250px;  
+        }   
+}
+}
+    .form{
+        @include tab{
+            width: 668px;
+        }
+        @include sp{
+            width: 345px;
+        }
+        &-txt{
+        @include tab{
+            position: relative;
+            bottom: 10px;
+            padding-bottom: 0;
+        }
+        @include sp{
+            position: relative;
+            bottom: 66px;
+        }
+    }
+        &-top{
+        @include sp{
+            margin-top: 0px;
+        }
+    }
+        &-btn{
+        @include sp{
+            width: 24%;
+            margin-bottom: 197px;
+        }
+    } 
+        &-rttl{
+        @include tab{                 
+            margin-top: 40px;
+        }
+    }   
+        &-radio-box{
+        @include sp{
+            
+            display: block;
+            margin-left: 0px;
+        }
+    }
+        &-radio{
+        @include sp{
+             margin-top: 14px;
+        }
+    }
+        &-radio input{
+        @include sp{
+            margin-left: 10px;
+        }
+
+            } 
+        &-txtarea{
+            @include sp{
+                height: 48px;
+            }
+        }  
+        textarea{
+        @include tab{
+            height: 180px;
+        }
+        @include sp{
+            height: 210px;
+        }
+    }
+        &-personal p{
+            @include sp{
+                font-size: 14px;
+            }
+        }
+        &-check2{
+        @include sp{
+            font-size: 14px;
+        }
+        }
+    }
+
+
+.form{
+    &-btn{
+        @include sp{
+            width: 47%;
+            margin-bottom: 80px;
+        }
+    }
+}
+
+
+

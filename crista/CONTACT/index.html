@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Sans+JP&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.min.css">
+    <link rel="stylesheet" href="./responsive.css">
+  
+
+    <title>CONTACT</title>
+</head>
+<body>
+    <header class="header">
+        <!--ヘッダーロゴ-->
+        <div class="header-logo0">
+            <div class="header-logo">
+                <img src="./img/header-logo.png" alt="ロゴ">
+            </div>
+            <!--ヘッダー画像-->
+            <div class="header-img">
+                <img src="./img/header-img.png" alt="人混み">
+            </div>
+        </div>
+        　　<!--ヘッダー背景（黒色）-->
+        
+            <div class="header-bg">
+                <img src="./img/header-bg.png" alt="背景">
+            </div>
+
+
+            <div class="header-ttl1">
+                <!--CONTACT-->
+                  <div class="header-ttl">
+                     <h1>CONTACT</h1>
+                     <p>お問い合わせ</p>
+                  </div>
+            </div>
+           
+
+
+
+                           <!--ハンバーガーメニュー-->
+                        <button class="fa fa-bars" id="show"> MENU</button> 
+           
+       　　　<nav>     
+                      <div class="header-menu">
+                       <button class="fas fa-times" id="hide"> MENU</button>
+                          <div class="header-menu1">
+                               <ul class="header-list">
+                                   <li>
+                                       <img src="./img/menu_icon.png">
+                                   </li>
+                                   <li href="#">ABOUT US</li>
+                                   <li href="#">WORKS</li>
+                                   <li href="#">CULTURE</li>
+                                   <li href="#">TOPICS</li>
+                                   <li href="#">CONTACT</li>
+                               </ul>
+                          </div>
+                      </div>
+                      <div id="cover"></div>
+            </nav> 
+    </header>
+
+   
+    <form class="form" action="#">
+        <div class="form-txt">
+            <p>ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。</p>
+        </div>
+        <div class="form-radio0">
+            <div class="form-top">
+                <div class="form-ttl">
+                    <p>お問い合わせ種別</p>
+                </div>
+                <div class="form-radio00 form-radio01">
+                    <p>必須</p>
+                </div>
+            </div>
+            <div class="form-radio-box">
+                <div class="form-radio">
+                    <input type="radio" id="seisakuirai" name="info" class="form-radio-btn"><label for="seisakuirai"> 制作依頼</label>
+                </div>
+                <div class="form-radio">
+                    <input type="radio" id="saiyou" name="info" class="form-radio-btn"><label for="saiyou"> 採用</label>
+                </div>
+                <div class="form-radio">
+                    <input type="radio" id="ir" name="info" class="form-radio-btn"><label for="ir"> IR</label>
+                </div>
+                <div class="form-radio">
+                    <input type="radio" id="sonota" name="info" class="form-radio-btn"><label for="sonota"> その他</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-list">
+            <div class="form-rttl">
+                <p class="form-name1">会社名・団体名</p>
+            </div>
+        <div class="form-txt1">
+               <input type="text" id="kaisya" class="form-txtarea"><label for="kaisya"></label>
+            </div>
+        </div>
+        <div class="form-list">
+             <div class="form-rttl">
+                 <div class="form-name">
+                     <p class="form-name1">お名前</p>
+                </div>
+             <div class="form-radio00 form-radio02">
+                 <p>必須</p>
+                 </div>
+            </div>
+             <input type="text" id="onamae" class="form-txtarea"><label for="onamae"></label>
+        </div>
+    <div class="form-list">
+        <div class="form-rttl">
+            <div class="form-name">
+                <p class="form-name1">メールアドレス</p>
+            </div>
+            <div class="form-radio00 form-radio03">
+                <p>必須</p>
+            </div>
+        </div>
+            <input type="text" id="onamae" class="form-txtarea"><label for="onamae"></label>
+    </div>
+    <div class="form-list">
+        <div class="form-rttl">
+            <p class="form-name1">電話番号</p>
+        </div>
+    <div class="form-txt1">
+        <input type="text" id="tel" class="form-txtarea ><label for="tel"></label>
+    </div>
+        <div class="form-list">
+            <div class="form-rttl">
+                <div class="form-name">
+                    <p class="form-name1">お問い合わせ内容</p>
+                </div>
+                <div class="form-radio00 form-radio04">
+                    <p>必須</p>
+                </div>
+            </div>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-name">
+            <div class="form-policy">
+             <p class="form-name1">PRIVACY POLICY</p>
+            </div>
+            <div class="form-personal">
+             <p>個人情報保護方針
+                    株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。
+                    
+                    1.個人情報の収集、利用
+                    当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。
+                    
+                    2.個人情報の第三者への開示と提供
+                    収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。
+                    業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。
+                    
+                    3.個人情報の保護
+                    当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。
+                    
+                    4.法令および関連規範の遵守
+                    当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。
+                    
+                    5.個人情報の開示・訂正・削除
+                    当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。
+                    
+                    法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。
+                    
+                    お問い合わせ窓口
+                    当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。
+                    株式会社ファイアープレイス
+                    044-589-4333
+                    
+                   </p>
+            </div>
+        </div>
+        <div class="form-wrapper">
+            <div class="form-check"> 
+                <input type="checkbox" id="check" name="check" class="form-check1">
+           </div>
+           <div class="form-check2">
+                 <label for="check">個人情報の取り扱いについて同意のうえ送信します。</label>
+           </div>
+        </div>
+    
+             <div class="form-btn">
+                <button>送信</button>
+            </div>
+    </form>   
+</div>
+    
+
+<footer class="footer">
+    <div>
+    <p>©2018 DIGSMILE INC.</p>
+
+</div>
+</footer>
+
+
+    <script src="script.js"></script>
+ </body>
+</html>  
+    
+    
